@@ -1,0 +1,46 @@
+
+
+.hamburger-menubar{
+    display: block;
+    font-size: 50px;
+    background-color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+  }
+  .large-width{
+    /* display: none; */
+    background-color: whitesmoke;
+    height: 100vh;
+    /* width: 300px; */
+    width: fit-content;
+    position: absolute;
+    z-index: 50;
+    left: -500px;
+    top: 0;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes animate {
+    0%{
+      left: -500px;
+    }100%{
+      left: 0px;
+    }
+  }
+  .large-width>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 50px 0 50px;
+  }
+  .large-width>ul>li{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 50px;
+    border-radius: 10px;
+  }
+  
+  
