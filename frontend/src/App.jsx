@@ -5,7 +5,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
 import Register from './pages/register'
-import Admindashboard from './pages/Admindashboard'
+import Admindashboard from './pages/admindashboard/Admindashboard'
 function App() {
   return(
     <div>
