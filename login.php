@@ -11,7 +11,7 @@
         $request = json_decode($data);
         $username = $request->email;
         $password = $request->password;
-        require("./controller/adminLogin.php");
+        require("./controller/login.php");
         $feedback = login($username, $password);
     }
 

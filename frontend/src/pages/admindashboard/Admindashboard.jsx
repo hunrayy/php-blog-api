@@ -4,7 +4,7 @@ import "./admindashboard.css"
 
 function Admindashboard() {
     return(
-        <div style={{backgroundColor: "white"}} className='bg-success'>
+        <div className='bg-success'>
             <header style={{display: "flex", alignItems: "center"}}>
                 <Sidebar />
                 <div style={{display: "flex", justifyContent: "center", width: "100%", color: "white"}}>
@@ -19,7 +19,7 @@ function Admindashboard() {
                 
                 <div className='graphic-cover'>
                     <div className='details-cover'>
-                        <img style={{position: "absolute", top: "-50%", right: "-40%", maxHeight: "280px", maxWidth: "280px"}} width="300px" height="300px" src=".././src/images/welcomeImage.png" alt="welcome image" />
+                        <img className='welcome-image' src=".././src/images/welcomeImage.png" alt="welcome image" />
                         
                         <div>
                             <h5>Henry Okiyi</h5>
@@ -48,6 +48,10 @@ function Admindashboard() {
                     </div> */}
                 </div>
             </div>
+
+         
+
+
             
 
         </div>

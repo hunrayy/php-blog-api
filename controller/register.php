@@ -16,6 +16,7 @@
         }else{
             try{
                 $query = "INSERT INTO `users` (`firstname`, `lastname`, `email`, `password`) VALUES ('$firstname', '$lastname', '$email', SHA('$password'))";
+                echo json_encode($query);
                 $result = mysqli_query($_conn, $query);
                 if($result){
                     json_encode([
@@ -31,7 +32,7 @@
                     "message" => "Account could not be created",
                     "reason" => $e
                 ]);
-                echo "Account not created";
+                echo "Account not created $e";
             };
 
         }

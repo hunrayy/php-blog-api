@@ -19,6 +19,7 @@
     top: 0;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
+    padding-top: 50px;
   }
   @keyframes animate {
     0%{
